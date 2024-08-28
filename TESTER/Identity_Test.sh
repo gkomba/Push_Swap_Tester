@@ -17,7 +17,7 @@ RES=1
             echo -e "\033[0;32mOK!\033[0m"
         else
             echo -e "\033[0;31mKO!\033[0m"
-			echo "Failed at ${INPUT}"
+			echo "Failed at \"$INPUT\""
 		fi
 	done
 echo ""

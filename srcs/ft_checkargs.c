@@ -6,7 +6,7 @@
 /*   By: gkomba <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 11:05:50 by gkomba            #+#    #+#             */
-/*   Updated: 2024/08/28 18:42:03 by gkomba           ###   ########.fr       */
+/*   Updated: 2024/08/28 19:09:40 by gkomba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_input_error(int argc, char **argv)
 		ft_is_only_sapce(argv[1]);
 		if ((ft_strlen(argv[1]) > 2) && ft_strchr(argv[1], 32) && ft_strchr(argv[1], 22))
 		{
-			ft_putstr_fd("rror", 1);
+			ft_putstr_fd("Error", 1);
 			exit(0);
 		}
 		if (ft_strlen(argv[1]) > 2 && ft_strchr(argv[1], 32))
@@ -31,7 +31,7 @@ void	ft_input_error(int argc, char **argv)
 			av = ft_split(argv[1], 32);
 			ft_check_args(argc, av);
 			ft_check_args_pro(av);
-			//ft_free_matriz(av);
+			ft_free_matriz(av);
 		}
 		else
 		{
