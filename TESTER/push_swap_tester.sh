@@ -1,14 +1,15 @@
 #!/bin/bash
 
 #VARS
-CHECK="./checker_linux"
-EXEC="./push_swap"
+CHECK="../checker_linux"
+EXEC="../push_swap"
 TIME="sleep 0.2"
 ERR="./Error_management.sh"
 IDT="./Identity_Test.sh"
 PSV="./Push_swap_Simple_version.sh"
 PMV="./Push_swap_Middle_version.sh"
 PAV="./Push_swap_Advanced_version.sh"
+LK="./leaks.sh"
 
 #INIT
 if [ -f $EXEC ]; then
@@ -38,7 +39,13 @@ elif [ "${1}" = 4 ]; then
 elif [ "${1}" = 5 ]; then
 	"${PAV}"
 	exit 0
+elif [ "${1}" = 6 ]; then
+	"${LK}"
+	exit 0
 fi
+
+$LK
+echo""
 $ERR
 echo ""
 $IDT

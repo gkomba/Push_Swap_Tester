@@ -1,7 +1,7 @@
 #!/bin/bash
 
-CHECK="./checker_linux"
-EXEC="./push_swap"
+CHECK="../checker_linux"
+EXEC="../push_swap"
 TIME="sleep 0.2"
 
 

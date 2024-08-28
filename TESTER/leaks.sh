@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VAL="valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes -s" 
-EXEC="./push_swap"
+EXEC="../push_swap"
 TIME="sleep 0.2"
 LEAK_CHECK="no leaks are possible"
 
