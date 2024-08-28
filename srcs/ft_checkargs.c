@@ -6,7 +6,7 @@
 /*   By: gkomba <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 11:05:50 by gkomba            #+#    #+#             */
-/*   Updated: 2024/08/28 15:31:17 by gkomba           ###   ########.fr       */
+/*   Updated: 2024/08/28 18:42:03 by gkomba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	ft_input_error(int argc, char **argv)
 			av = ft_split(argv[1], 32);
 			ft_check_args(argc, av);
 			ft_check_args_pro(av);
-			ft_free_matriz(av);
+			//ft_free_matriz(av);
 		}
 		else
 		{
