@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: gkomba <<marvin@42.fr> >                   +#+  +:+       +#+         #
+#    By: gkomba <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/23 20:21:07 by gkomba            #+#    #+#              #
-#    Updated: 2024/08/02 17:39:59 by gkomba           ###   ########.fr        #
+#    Updated: 2024/08/28 08:40:10 by gkomba           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,8 @@ SRCS = srcs/ft_add_list_element.c\
 	srcs/algorithms_utils3.c\
 	srcs/push_swap.c\
 
+#MAKEFLAGS += -silent
+
 OBJS = ${SRCS:.c=.o}
 CC = cc
 RM = rm -f
@@ -40,11 +42,12 @@ LIBFT = libft
 
 all: ${NAME}
 
+
 ${NAME}: ${OBJS}
 	make -C ${PRINTF}
 	make -C ${LIBFT}
 	${CC} ${CFLAGS} -o ${NAME} ${OBJS} ${LIBFT}/libft.a ${PRINTF}/libftprintf.a
-	@echo "\033[0;32mOK!\033[0m"
+	echo "\033[0;32mOK!\033[0m"
 
 norm:
 	norminette
