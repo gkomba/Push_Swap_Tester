@@ -310,6 +310,57 @@ INPUT="1 2 3 4 5 6 7 8 9 0+ d"
 		echo -e "\033[0;31mKO!\033[0m"
 		echo "Failed at \"$INPUT\""
 	fi
+
+
+INPUT="4 7 2 4 8"
+	if $VAL $EXEC "$INPUT" 2>&1 | grep -q "${LEAK_CHECK}"; then
+		echo -e "\033[0;32mOK!\033[0m"
+	else
+		echo -e "\033[0;31mKO!\033[0m"
+		echo "Failed at \"$INPUT\""
+	fi
+
+INPUT="2+2"
+	if $VAL $EXEC "$INPUT" 2>&1 | grep -q "${LEAK_CHECK}"; then
+		echo -e "\033[0;32mOK!\033[0m"
+	else
+		echo -e "\033[0;31mKO!\033[0m"
+		echo "Failed at \"$INPUT\""
+	fi
+
+INPUT="1 2 02"
+	if $VAL $EXEC "$INPUT" 2>&1 | grep -q "${LEAK_CHECK}"; then
+		echo -e "\033[0;32mOK!\033[0m"
+	else
+		echo -e "\033[0;31mKO!\033[0m"
+		echo "Failed at \"$INPUT\""
+	fi
+
+INPUT="1 2 2"
+	if $VAL $EXEC "$INPUT" 2>&1 | grep -q "${LEAK_CHECK}"; then
+		echo -e "\033[0;32mOK!\033[0m"
+	else
+		echo -e "\033[0;31mKO!\033[0m"
+		echo "Failed at \"$INPUT\""
+	fi
+
+
+INPUT="-444444444444444444444"
+	if $VAL $EXEC "$INPUT" 2>&1 | grep -q "${LEAK_CHECK}"; then
+		echo -e "\033[0;32mOK!\033[0m"
+	else
+		echo -e "\033[0;31mKO!\033[0m"
+		echo "Failed at \"$INPUT\""
+	fi
+
+INPUT="444444444444444444444"
+	if $VAL $EXEC "$INPUT" 2>&1 | grep -q "${LEAK_CHECK}"; then
+		echo -e "\033[0;32mOK!\033[0m"
+	else
+		echo -e "\033[0;31mKO!\033[0m"
+		echo "Failed at \"$INPUT\""
+	fi
+
 }
 
 leaks
