@@ -6,7 +6,8 @@ LEAK_CHECK="no leaks are possible"
 
 
 leaks(){
-echo "Leaks Check | PART 1"
+
+echo -e "\033[0;96mPUSH_SWAP - LEAKS CHECK | PART 1 |\033[0m"
 for INPUT in "42" "2 3" "1 2 3 4 5 6 7 8 9" "2 3 4 5 6 7" "0 1 2 3 4" "100 200 300 400 500 600 700 800"
     do
 		
@@ -29,7 +30,7 @@ for INPUT in "42" "2 3" "1 2 3 4 5 6 7 8 9" "2 3 4 5 6 7" "0 1 2 3 4" "100 200 3
 done
 
 echo ""
-echo "Leaks Check | PART 2"
+echo -e "\033[0;96mPUSH_SWAP - LEAKS CHECK | PART 2 |\033[0m"
 
 INPUT="1 2 3"
     if $VAL $EXEC $INPUT 2>&1 | grep -q "${LEAK_CHECK}"; then
@@ -130,7 +131,8 @@ INPUT="1 2 0"
 	fi
 
 echo ""
-echo "Leaks Check | PART 2"
+
+echo -e "\033[0;96mPUSH_SWAP - LEAKS CHECK | PART 3 |\033[0m"
 
 INPUT="1 2 g 1"
 	if $VAL $EXEC "$INPUT" 2>&1 | grep -q "${LEAK_CHECK}"; then

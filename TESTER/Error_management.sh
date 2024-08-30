@@ -6,8 +6,7 @@ EXEC="../push_swap"
 TIME="sleep 0.2"
 
 Error_management(){
-echo "Error management | PART 1"
-
+echo -e "\033[0;96mPUSH_SWAP - ERROR MANAGEMENT | PART 1 |\033[0m"
 $TIME
 INPUT="1 2 1"
 RES=$($EXEC $INPUT 2>&1)
@@ -218,7 +217,7 @@ RES=$($EXEC $INPUT 2>&1)
 	fi
 
 echo ""
-echo "Error management | PART 2"
+echo -e "\033[0;96mPUSH_SWAP - ERROR MANAGEMENT | PART 2 |\033[0m"
 
 $TIME
 INPUT="1 2 1"

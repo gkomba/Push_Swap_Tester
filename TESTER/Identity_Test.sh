@@ -7,7 +7,7 @@ TIME="sleep 0.2"
 
 
 Identity_Test(){
-echo "Push_swap - Identity Test | PART 1"
+echo -e "\033[0;96mPUSH_SWAP - IDENTITY TEST | PART 1 |\033[0m"
 RES=1
     for INPUT in "42" "2 3" "1 2 3 4 5 6 7 8 9" "2 3 4 5 6 7" "0 1 2 3 4" "100 200 300 400 500 600 700 800"
     do
@@ -21,7 +21,7 @@ RES=1
 		fi
 	done
 echo ""
-echo "Push_swap - Identity Test | PART 2"
+echo -e "\033[0;96mPUSH_SWAP - IDENTITY TEST | PART 2 |\033[0m"
 RES=1
 	for INPUT in "42" "2 3" "1 2 3 4 5 6 7 8 9" "2 3 4 5 6 7" "0 1 2 3 4" "100 200 300 400 500 600 700 800"
     do
