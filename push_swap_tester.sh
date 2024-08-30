@@ -11,17 +11,29 @@ PMV="./Push_swap_Middle_version.sh"
 PAV="./Push_swap_Advanced_version.sh"
 LK="./leaks.sh"
 
-#INIT
+#VERIFY
 if [ -f $EXEC ]; then
-	echo ""
+	echo -n
 else
-	echo " ${EXEC} not founded"
+	echo "./push_swap program not founded"
 	exit 1
 fi
 if [ -f $CHECK ]; then
 	echo ""
 else
-	echo "${CHECK} not founded"
+	echo "./checker_linux program not founded"
+	exit 1
+fi
+if [ -x $EXEC ]; then
+	echo -n
+else
+	echo "./push_swap permission danied"
+	exit 1
+fi
+if [ -x $CHECK ]; then
+	echo -n
+else
+	echo "./checker_linux permission danied"
 	exit 1
 fi
 

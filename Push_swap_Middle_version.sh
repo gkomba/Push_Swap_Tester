@@ -5,7 +5,6 @@ CHECK="./checker_linux"
 EXEC="../push_swap"
 TIME="sleep 0.2"
 
-
 Push_swap_Middle_version(){
 echo -e "\033[0;96mPUSH_SWAP - MIDDLE VERSION\033[0m"
 

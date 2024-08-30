@@ -5,7 +5,6 @@ CHECK="./checker_linux"
 EXEC="../push_swap"
 TIME="sleep 0.2"
 
-
 Identity_Test(){
 echo -e "\033[0;96mPUSH_SWAP - IDENTITY TEST | PART 1 |\033[0m"
 RES=1

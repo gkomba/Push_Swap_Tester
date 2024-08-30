@@ -7,8 +7,6 @@ TIME="sleep 0.2"
 
 Push_swap_Advanced_version(){
 echo -e "\033[0;96mPUSH_SWAP - ADVANCED VERSION\033[0m"
-
-
 $TIME
 INPUT=$(shuf -i 1-5000 -n 500)
 RES=$($EXEC $INPUT | $CHECK $INPUT)
