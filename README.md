@@ -1,6 +1,6 @@
-# Push Swap Tester
+# 🔱Push Swap Tester🔱
 
-#Steps to use
+# Steps to use
 
 1 - Clone the repository on the same repository where the executable of push swap is 
 ```bash
@@ -14,7 +14,7 @@ cd Push_Swap_Tester
 ```bash
 ./push_swap_tester.sh
 ```
-#Options
+# Options
 
 1 - To check only Memory Leaks
 ```bash
@@ -40,4 +40,14 @@ cd Push_Swap_Tester
 ```bash
 ./push_swap_tester.sh 6
 ```
+# Full comand
+```bash
+git clone https://github.com/gkomba/Push_Swap_Tester.git && cd Push_Swap_Tester && ./push_swap_tester.sh
+```
 
+# Issues
+If you founded some issue on the tester please report
+
+# Contact
+Github : https://github.com/gkomba
+E-mail : kombagildo@gmail.com
