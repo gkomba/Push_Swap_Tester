@@ -1,15 +1,43 @@
 # Push Swap Tester
 
+#Steps to use
+
+1 - Clone the repository on the same repository where the executable of push swap is 
 ```bash
-#!/bin/bash
+git clone https://github.com/gkomba/Push_Swap_Tester.git
+```
+2 - Navigate to the Push_Swap_tester folder
+```bash
+cd Push_Swap_tester
+```
+3 - Launch the tester
+```bash
+./push_swap_tester.sh
+```
+#Options
 
-# Exibe uma mensagem de boas-vindas
-echo "Bem-vindo ao meu script!"
+1 - To check only Memory Leaks
+```bash
+./push_swap_tester.sh 1
+```
+2 - To check only Error Management
+```bash
+./push_swap_tester.sh 2
+```
+3 - To check only Identity Tests
+```bash
+./push_swap_tester.sh 3
+```
+4 - To check only push_swap simple version
+```bash
+./push_swap_tester.sh 4
+```
+5 - To check only push_swap middle version
+```bash
+./push_swap_tester.sh 5
+```
+6 - to Check only push_swap advanced version
+```bash
+./push_swap_tester.sh 6
+```
 
-# Exemplo de função
-minha_funcao() {
-    echo "Essa é uma função em shell."
-}
-
-# Chama a função
-minha_funcao
