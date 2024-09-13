@@ -6,7 +6,7 @@
 ```bash
 git clone https://github.com/gkomba/Push_Swap_Tester.git
 ```
-2 - Navigate to the Push_Swap_tester folder
+2 - Navigate to the Push_Swap_Tester folder
 ```bash
 cd Push_Swap_tester
 ```
