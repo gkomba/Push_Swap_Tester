@@ -8,7 +8,7 @@ git clone https://github.com/gkomba/Push_Swap_Tester.git
 ```
 2 - Navigate to the Push_Swap_Tester folder
 ```bash
-cd Push_Swap_tester
+cd Push_Swap_Tester
 ```
 3 - Launch the tester
 ```bash
