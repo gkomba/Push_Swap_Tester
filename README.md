@@ -1,9 +1,17 @@
+# Exemplo de Script Shell
 
-  _____           _        _____                      _______        _            
- |  __ \         | |      / ____|                    |__   __|      | |           
- | |__) |   _ ___| |__   | (_____      ____ _ _ __      | | ___  ___| |_ ___ _ __ 
- |  ___/ | | / __| '_ \   \___ \ \ /\ / / _` | '_ \     | |/ _ \/ __| __/ _ \ '__|
- | |   | |_| \__ \ | | |  ____) \ V  V / (_| | |_) |    | |  __/\__ \ ||  __/ |   
- |_|    \__,_|___/_| |_| |_____/ \_/\_/ \__,_| .__/     |_|\___||___/\__\___|_|   
-                                             | |                                  
-                                             |_|                                  
+Aqui está um exemplo de como usar um script Shell:
+
+```bash
+#!/bin/bash
+
+# Exibe uma mensagem de boas-vindas
+echo "Bem-vindo ao meu script!"
+
+# Exemplo de função
+minha_funcao() {
+    echo "Essa é uma função em shell."
+}
+
+# Chama a função
+minha_funcao
