@@ -1,6 +1,4 @@
-# Exemplo de Script Shell
-
-Aqui está um exemplo de como usar um script Shell:
+# Push Swap Tester
 
 ```bash
 #!/bin/bash
