@@ -51,22 +51,22 @@ display(){
 display
 
 if [ "${1}" = 1 ]; then
-	"${ERR}"
+	"${LK}"
 	exit 0
 elif [ "${1}" = 2 ]; then
-	"${IDT}"
+	"${ERR}"
 	exit 0
 elif [ "${1}" = 3 ]; then
-	"${PSV}"
+	"${IDT}"
 	exit 0	
 elif [ "${1}" = 4 ]; then
-	"${PMV}"
+	"${PSV}"
 	exit 0
 elif [ "${1}" = 5 ]; then
-	"${PAV}"
+	"${PMV}"
 	exit 0
 elif [ "${1}" = 6 ]; then
-	"${LK}"
+	"${PAV}"
 	exit 0
 fi
 
